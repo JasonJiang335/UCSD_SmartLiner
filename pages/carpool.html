@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>UCSD SmartLiner</title>
+<!-- Mobile viewport optimized -->
+  <meta name="viewport" content="width=device-width">
+<!-- CSS -->
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" /> 
+    <link href="../css/bootstrap-responsive.css" rel="stylesheet" type="text/css" />
+    <link type="text/css" rel="stylesheet" href="../css/main.css">
+<!--Scripts-->
+ <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+ <script src="../js/bootstrap.js" type="text/javascript"></script>
+
+</head>
+<body>
+<div class="container-fluid">
+<header><h2> </h2>
+
+
+<div class="row-fluid">
+<div class="navbar navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container-fluid">
+  <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+   <span class="icon-bar"></span>
+   <span class="icon-bar"></span>
+   <span class="icon-bar"></span>
+  </a>
+  <div class="nav-collapse collapse">
+<ul class="nav">
+   <li class="active"><a href="../indexnew.html"><i class="icon-home icon-white"></i> Home</a></li>
+  <!--  <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Settings<b class="caret"></b></a>
+   <ul class="dropdown-menu">
+    <li><a href="#">Accouting Settings</a></li>
+    <li><a href="#">Profile Settings</a></li>
+    </ul> DONT THINK THIS IS NECESSARY TO SEPARATE THE TWO
+   </li>    -->      
+   <li><a href="../pages/settings.html">Profile</a></li>
+   <li><a href="#">Sign Out</a></li>
+</ul>
+    </div><!-- /.nav-collapse -->
+    </div><!-- /.container -->
+  </div><!-- /.navbar-inner -->
+</div><!-- /.navbar -->
+</div>
+</header>
+
+<center>
+<div class="container">
+  <div class="row clearfix">
+    <div class="col-md-12 column">
+    <center>
+        <img alt="140x140" src="http://mobile.ucsd.edu/_images/icons/icon-shuttles2x.png" class="img-circle">
+        <p class="lead">Carpool</p>
+      <br><br>
+    
+    
+    <p class="lead">Choose a Default Address</p>
+	<form class="form-inline" role="form">
+	<div class="form-group has-success has-feedback">
+    <label class="control-label" for="inputSuccess4"><div id="profileInfo">A</div></label>
+    <input type="text" class="form-control" id="inputSuccess4" placeholder="i.e. 7506 Charmant Drive">
+    <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+	</div>
+	<div class="filler"></div>
+	
+	<div class="checkbox">
+	<label>
+    <input type="checkbox" value="">
+    Remember this address
+	</label>
+	</div>
+	
+	<div class="filler"></div>
+	
+	
+	<form class="form-inline" role="form">
+	<div class="form-group has-success has-feedback">
+    <label class="control-label" for="inputSuccess4"><div id="profileInfo">B</div></label>
+    <input type="text" class="form-control" id="inputSuccess4" placeholder="i.e. 7956 Playmor Terrace, 92122">
+    <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+	</div>
+	<div class="filler"></div>
+	
+	<div class="checkbox">
+	<label>
+    <input type="checkbox" value="">
+    Remember this address
+	</label>
+	</div>
+	
+	<div class="filler"></div>
+	
+	<form class="form-inline" role="form">
+	<div class="form-group has-success has-feedback">
+    <label class="control-label" for="inputSuccess4"><div id="profileInfo">C</div></label>
+    <input type="text" class="form-control" id="inputSuccess4" placeholder="a third location">
+    <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+	</div>
+	<div class="filler"></div>
+	
+	<div class="checkbox">
+	<label>
+    <input type="checkbox" value="">
+    Remember this address
+	</label>
+	</div>
+	
+	<div class="filler"></div>
+	<div class="filler"></div>
+	
+	<a href="#"><img alt="140x140" src="../img/placeholder.png" class="img-rounded" id="placeholderImage"></a>
+	<div class="filler"></div>
+	
+	<button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Choose from Previous Addresses</button>
+	
+	
+	<div class="modal fade" id="myModal">
+	<div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Recent Address inputs</h4>
+      </div>
+      <div class="modal-body">
+        <p>7506 Charmant Drive</p>
+		<p>15142 Clemente Street</p>
+		<p>7956 Playmor Terrace, 92122</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+	
+         
+        </center>
+  
+
+	<br><br>
+	
+  <div class="filler"></div>
+  <div class="filler"></div>
+  
+  
+  <center>
+  <a href="carTransport.html"><button type="button" class="btn btn-warning btn-default">Back</button></a>
+
+  <a href="../pages/destination.html" button type="button" class="btn btn-primary btn-lg">Next</button></a>
+  </center>
+  </div>
+  </div>
+  </div>
+
+</center>
+
+</body>
+</html>

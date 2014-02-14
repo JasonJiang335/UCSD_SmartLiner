@@ -1,13 +1,14 @@
 
+
 <!DOCTYPE html>
 <html>
 <head>
 	<title id="title"></title>
-	<link href="http://www.ucsdbus.com/content/styles.css" rel="stylesheet"/>
+	<link href="/content/styles.css" rel="stylesheet"/>
 	<!--[if lte IE 7]>
 		<link href="/content/ie.css" rel="stylesheet"/>
 	<![endif]-->
-	<script type="text/javascript" src="http://www.ucsdbus.com/Scripts/combined/master_59C2ED1EF30A446555AD34CCADB8776E.js"></script>
+	<script type="text/javascript" src="/Scripts/combined/master_59C2ED1EF30A446555AD34CCADB8776E.js"></script>
 		<script type="text/x-jquery-tmpl" id="NavigationButtonTemplate">
     <a href="${URL}">${Caption}</a>
 
@@ -15,21 +16,18 @@
 
 	
 
-	<link href="http://www.ucsdbus.com/Content/map.css" rel="stylesheet" type="text/css" />
+	<link href="/Content/map.css" rel="stylesheet" type="text/css" />
 	<!--[if lte IE 7]>
 		<link href="/content/iemap.css" rel="stylesheet"/>
 	<![endif]-->
-	<script type="text/javascript"
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAySAQEHuUckM8vyhifubke3IVqJYua3Ck&sensor=true">
-    </script>
-	<!--script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=geometry&sensor=true&client=gme-syncro"></script-->
+	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=geometry&sensor=true&client=gme-syncro"></script>
 	<script type="text/javascript">
 		var vehicle_image_dir = "/images/vehicle_icons/";
 		var stop_image_dir = "/images/stop_icons/";
 	</script>
 
-	<script type="text/javascript" src="http://www.ucsdbus.com/Map/GetMarkerImages"></script>
-	<script type="text/javascript" src="http://www.ucsdbus.com/Scripts/combined/map_DDF8EC8D424FE3E4CD0A2CE40E39A0A9.js"></script>
+	<script type="text/javascript" src="/Map/GetMarkerImages"></script>
+	<script type="text/javascript" src="/Scripts/combined/map_BF6E878EF25F3271919A812A5EF0951E.js"></script>
 			
 		<script type="text/x-jquery-tmpl" id="FindStopViewTemplate">
     <div class="find-stop-title">
@@ -117,7 +115,7 @@
 		{{if PortalModel.TextKeyword || PortalModel.IVRNumber }}
 		<div class="sub-heading">
 			<span class="stop-num">Stop <strong>#<a class="stop-num-link" title="Mobile Information"
-				target="_blank" href="http://www.ucsdbus.com/MobileInformation">${Stop.RtpiNumber == 0 ? "--" : Stop.RtpiNumber}</a></strong></span>
+				target="_blank" href="/MobileInformation">${Stop.RtpiNumber == 0 ? "--" : Stop.RtpiNumber}</a></strong></span>
 		</div>
 		{{/if}}
 		{{if StreetView}}
@@ -206,7 +204,7 @@
                             <tbody>
                                 <tr>
                                     <td align="center">
-                                        <nowrap><img style="vertical-align:middle" src="http://www.ucsdbus.com/images/vehicle_label_sample.gif"></nowrap>
+                                        <nowrap><img style="vertical-align:middle" src="/images/vehicle_label_sample.gif"></nowrap>
                                     </td>
                                     <td align="left">
                                         Vehicle Number
@@ -214,8 +212,8 @@
                                 </tr>
                                 <tr>
                                     <td nowrap="">
-                                        <img style="vertical-align: middle" src="http://www.ucsdbus.com/images/vehicle_icons/red_dot.gif">&nbsp;<img
-                                            style="vertical-align: middle" src="http://www.ucsdbus.com/Images/vehicle_icons/e_1.gif">&nbsp;
+                                        <img style="vertical-align: middle" src="/images/vehicle_icons/red_dot.gif">&nbsp;<img
+                                            style="vertical-align: middle" src="/Images/vehicle_icons/e_1.gif">&nbsp;
                                     </td>
                                     <td align="left">
                                         Stopped Bus
@@ -223,8 +221,8 @@
                                 </tr>
                                 <tr>
                                     <td nowrap="">
-                                        <img style="vertical-align: middle" src="http://www.ucsdbus.com/images/vehicle_icons/green_dot.gif">&nbsp;<img
-                                            style="vertical-align: middle" src="http://www.ucsdbus.com/images/vehicle_icons/e_2.gif">&nbsp;
+                                        <img style="vertical-align: middle" src="/images/vehicle_icons/green_dot.gif">&nbsp;<img
+                                            style="vertical-align: middle" src="/images/vehicle_icons/e_2.gif">&nbsp;
                                     </td>
                                     <td align="left">
                                         Moving Bus
@@ -232,7 +230,7 @@
                                 </tr>
                                 <tr>
                                     <td align="center">
-                                        <img style="vertical-align: middle" src="http://www.ucsdbus.com/images/stop_icons/minimarker.gif">
+                                        <img style="vertical-align: middle" src="/images/stop_icons/minimarker.gif">
                                     </td>
                                     <td align="left">
                                         Bus Stops
@@ -240,7 +238,7 @@
                                 </tr>
                                 <tr>
                                     <td align="center">
-                                        <img style="vertical-align: middle" src="http://www.ucsdbus.com/images/other_transit.png">
+                                        <img style="vertical-align: middle" src="/images/other_transit.png">
                                     </td>
                                     <td align="left">
                                         Other Transit Agency<br>
@@ -260,7 +258,7 @@
                                 </tr>
                                 <tr>
                                     <td align="center">
-                                        <img style="vertical-align: middle" src="http://www.ucsdbus.com/images/good_traffic.png">
+                                        <img style="vertical-align: middle" src="/images/good_traffic.png">
                                     </td>
                                     <td align="left" nowrap="">
                                         More than 50 mph
@@ -268,7 +266,7 @@
                                 </tr>
                                 <tr>
                                     <td align="center">
-                                        <img style="vertical-align: middle" src="http://www.ucsdbus.com/images/medium_traffic.png">
+                                        <img style="vertical-align: middle" src="/images/medium_traffic.png">
                                     </td>
                                     <td align="left" nowrap="">
                                         25 - 50 mph
@@ -276,7 +274,7 @@
                                 </tr>
                                 <tr>
                                     <td align="center">
-                                        <img style="vertical-align: middle" src="http://www.ucsdbus.com/images/bad_traffic.png">
+                                        <img style="vertical-align: middle" src="/images/bad_traffic.png">
                                     </td>
                                     <td align="left" nowrap="">
                                         Less than 25 mph
@@ -312,7 +310,7 @@
     </script>
 
 		<script type="text/x-jquery-tmpl" id="RegionMenuViewTemplate">
-    <div class="regionHeading" style="cursor: pointer;">${Name} <img id="Img1" src="http://www.ucsdbus.com/images/uncollapse.gif" /></div>
+    <div class="regionHeading" style="cursor: pointer;">${Name} <img id="Img1" src="/images/uncollapse.gif" /></div>
 <ul class="routes_container" >
 </ul>
 
@@ -358,7 +356,7 @@
 	                $("#ds").show();
 	                $(document).attr("title", portalModel.Name);
 	                $("#new_page_title").html(portalModel.Name);
-	                $("#logo").attr("src", "http://www.ucsdbus.com/images/" + portalModel.Logo);
+	                $("#logo").attr("src", "/images/" + portalModel.Logo);
 
 	                if (portalModel.WebsiteUrl) {
 	                    $("#website-url").attr("href", portalModel.WebsiteUrl);
@@ -474,3 +472,5 @@
 
 <script type="text/javascript"> if (!NREUMQ.f) {NREUMQ.f=function() {NREUMQ.push(["load",new Date().getTime()]);var e=document.createElement("script"); e.type="text/javascript"; e.src=(("http:"===document.location.protocol)?"http:":"https:") + "//" + "js-agent.newrelic.com/nr-100.js"; document.body.appendChild(e);if(NREUMQ.a)NREUMQ.a();};NREUMQ.a=window.onload;window.onload=NREUMQ.f;};NREUMQ.push(["nrfj","beacon-2.newrelic.com","3f9d85d07d","3332093","ZQEGNUIFVhZZWxIKXlxLIA5EKl0Re1cIF0NdCAgEQkt1BEgXLw1VVxw=",0,10,new Date().getTime(),"E9EC8CB10B18540E","","","",""]);</script></body>
 </html>
+
+
