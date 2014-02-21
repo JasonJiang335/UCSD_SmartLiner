@@ -1,0 +1,124 @@
+@import url(http://fonts.googleapis.com/css?family=Antic+Slab);
+
+html,body {
+  height:100%;
+}
+
+h1 {
+  font-family: 'Antic Slab', serif;
+  font-size: 200%;
+  color:#35208A;
+}
+
+h2 {
+  font-family: 'Antic Slab', serif;
+  font-size: 125%;
+  color: #35208A;
+}
+
+.lead {
+  color:#6CBDF0;
+  font-size: 125%;
+}
+
+p brandtext {
+  color: #6CBDF0;
+  font-size: 75%;
+}
+
+.filler {
+  height: 15px;
+  width: auto;
+}
+
+
+
+.center {
+  vertical-align: center;
+}
+
+.logo {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+}
+
+#map_canvas {
+  width: 400px;
+  height: 500px;
+}
+
+#profileInfo{
+font-size:120%;
+color:#35208A;
+line-height:100%;
+}
+
+#userpic img{
+display:inline;
+padding-right:20px;
+}
+
+#userpic h1{
+display:inline;
+}
+
+#placeholderImage{
+width:1000px;
+}
+
+.ontime {
+  border: solid #80ff80 2px;
+  font-size: 130%;
+  padding: 10px;
+  color: #80ff80;
+  height: 20px;
+  width: 150px;
+}
+
+.campuslocation {
+  font-size: 130%;
+  color: #6CBDF0
+}
+
+.ontimecampus {
+  border: solid #80ff80 2px;
+  font-size: 130%;
+  padding: 10px;
+  color: #80ff80;
+  height: 20px;
+  width: 150px;
+}
+
+
+.navbar .brand {
+    max-height: 40px;
+    overflow: visible;
+    padding-top: 3px;
+    padding-bottom: 0;
+    
+}
+
+.navbar .brand img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+#bottombar
+{
+	 position: fixed;
+         background-color: #2f2f2f;
+         padding: 5px 0px 1px 0px;
+	 bottom: 0px;
+	 margin-right: 5px;
+         margin-left: -12px;
+	 width: 93%;
+	 z-index:9999;
+
+         
+  -webkit-border-radius: 6px 6px 6px 6px;
+     -moz-border-radius: 6px 6px 6px 6px;
+          border-radius: 6px 6px 6px 6px;
+}
+

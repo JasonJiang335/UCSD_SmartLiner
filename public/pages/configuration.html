@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>UCSD SmartLiner</title>
+<!-- Mobile viewport optimized -->
+  <meta name="viewport" content="width=device-width">
+<!-- CSS -->
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" /> 
+    <link href="../css/bootstrap-responsive.css" rel="stylesheet" type="text/css" />
+    <link type="text/css" rel="stylesheet" href="../css/main.css">
+<!--Scripts-->
+ <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+ <script src="../js/bootstrap.js" type="text/javascript"></script>
+
+ <style>
+    #map_canvas {
+      width: 280px;
+      height: 300px;
+    }
+ </style>
+ <script src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
+ <script>
+   function initialize() {
+     var map_canvas = document.getElementById('map_canvas');
+     var map_options = {
+       center: new google.maps.LatLng(32.878171, -117.2391),
+       zoom: 13,
+       mapTypeId: google.maps.MapTypeId.ROADMAP
+     }
+     var map = new google.maps.Map(map_canvas, map_options)
+   }
+   google.maps.event.addDomListener(window, 'load', initialize);
+ </script>
+</head>
+
+<body>
+<div class="container-fluid">
+ 
+<header>
+<div class="row-fluid">
+<div class="navbar navbar-inverse">
+  <div class="navbar-inner">
+   <a class="brand" href="../indexnew.html"><img src="../img/logo.png"/></a>
+    <div class="container-fluid">
+  <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+   <span class="icon-bar"></span>
+   <span class="icon-bar"></span>
+   <span class="icon-bar"></span>
+  </a>
+  <div class="nav-collapse collapse">
+<ul class="nav">
+   <li class="active"><a href="../indexnew.html"><i class="icon-home icon-white"></i> Home</a></li>
+   <li><a href="configuration.html">Profile</a></li>
+   <li><a href="../index.html">Sign Out</a></li>
+   
+</ul>
+    </div><!-- /.nav-collapse -->
+    </div><!-- /.container -->
+  </div><!-- /.navbar-inner -->
+</div><!-- /.navbar -->
+</div>
+</header>
+
+<center>
+<div class="container">
+  <div class="row clearfix">
+    <div class="col-md-12 column">
+    <center>
+        <p class="lead">1. Select any means of Alternative Transport you may have</p>
+        <p>*Please note that your choices affect app suggestions!</p>
+
+      <br>
+
+        <!-- NONE Config Part-->
+        <!--div class="panel-group" id="accordion"-->
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                  <img alt="140x140" src="../img/Man.png" class="img-circle">
+                  <p class="text">None</p>
+                </a>
+              </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p class="lead">2. Choose your nearest Shuttle Stop</p>
+
+                <center>
+                <a href="#" class="btn btn-default btn-lg" role="button">Regents and Nobel</a>
+                <a href="#" class="btn btn-default btn-lg" role="button">Regents and Arriba</a>
+                <a href="#" class="btn btn-default btn-lg" role="button">Palmila and Lebon</a>
+                <a href="#" class="btn btn-default btn-lg" role="button">Lebon and Nobel</a>
+                </center>
+                <div class="filler"></div>
+                <div class="filler"></div>
+              </div>
+            </div>
+          </div>
+        <!--/div-->
+
+
+        <!-- BIKE Config Part-->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                <img alt="140x140" src="../img/Bike.png" class="img-circle"></a>
+                <p class="text2">Bicycle</p>
+              </a>
+            </h4>
+          </div>
+          <div id="collapseTwo" class="panel-collapse collapse">
+            <div class="panel-body">
+              <p class="lead">2. Choose your nearest Shuttle Stop</p>
+
+                <center>
+                <a href="#" class="btn btn-default btn-lg" role="button">Regents and Nobel</a>
+                <a href="#" class="btn btn-default btn-lg" role="button">Regents and Arriba</a>
+                <a href="#" class="btn btn-default btn-lg" role="button">Palmila and Lebon</a>
+                <a href="#" class="btn btn-default btn-lg" role="button">Lebon and Nobel</a>
+                </center>
+                <div class="filler"></div>
+                <div class="filler"></div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- CAR Config Part-->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                <img alt="140x140" src="../img/Car.png" class="img-circle"></a>
+                <p class="text3">Automobile</p>
+              </a>
+            </h4>
+          </div>
+          <div id="collapseThree" class="panel-collapse collapse">
+            <div class="panel-body">
+              <p class="lead">2. Choose your nearest Shuttle Stop</p>
+
+                <center>
+                <a href="#" class="btn btn-default btn-lg" role="button">Regents and Nobel</a>
+                <a href="#" class="btn btn-default btn-lg" role="button">Regents and Arriba</a>
+                <a href="#" class="btn btn-default btn-lg" role="button">Palmila and Lebon</a>
+                <a href="#" class="btn btn-default btn-lg" role="button">Lebon and Nobel</a>
+                </center>
+              <br>
+              <p class="lead">3. Please specify your car's info</p>
+              <p class="form">License Number <input type="text" name="login" value="" placeholder=" "></p>
+              <div class="container container-fluid">
+                <form id="form-search" class="form-inline" action="#" method="get">
+                  <!--<input class="span2" type="text" value="" placeholder="Brand" name="q">-->
+                  <select class="span2" name="category">
+                          <option>Make</option>
+                          <option>BMW</option>
+                          <option>Lexus</option>
+                          <option>Toyota</option>
+                        </select>
+                </form>
+              </div>
+            
+            
+              <div class="container container-fluid">
+              <form id="form-search" class="form-inline" action="#" method="get">
+                <!--<input class="span2" type="" value="" placeholder="Model" name="q">-->
+                <select class="span2" name="category">
+                        <option>Model</option>
+                        <option>355i</option>
+                        <option>2</option>
+                        <option>3</option>
+                      </select>
+              </form>
+              </div>
+            
+              <div class="container container-fluid">
+                <form id="form-search" class="form-inline" action="#" method="get">
+                  <!--<input class="span2" type="text" value="" placeholder="Year" name="q">-->
+                  <select class="span2" name="category">
+                          <option>Year</option>
+                          <option>2013</option>
+                          <option>2012</option>
+                          <option>2011</option>
+                        </select>
+                </form>
+              </div>
+              
+              <div class="container container-fluid">
+                <form id="form-search" class="form-inline" action="#" method="get">
+                  <!--<input class="span2" type="text" value="" placeholder="Color" name="q">-->
+                  <select class="span2" name="category">
+                          <option>Color</option>
+                          <option>Dark Blue</option>
+                          <option>Red</option>
+                          <option>Black</option>
+                        </select>
+                </form>
+              </div>
+              <br>
+              <p class="lead">4. Upload a Photo of Your Vehicle</p>
+              
+              <div class="fileinput fileinput-new" data-provides="fileinput">
+                <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 200px; height: 150px;">
+                </div>
+                <div>
+                  <span class="btn btn-default btn-file"><span class="fileinput-new"></span><span class="fileinput-exists">Change  </span><input type="file" name="..."></span>
+                  <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+                </div>
+              </div>
+
+            </div>
+            <div class="filler"></div>
+            <div class="filler"></div>
+                
+          </div>
+        </div>
+    </center>
+    </div>
+  </div>
+</div>
+</center>
+
+
+<!-- Choose Home Address-->
+<br>
+<center>
+<p class="lead">3: Choose a Default Address</p>
+  <form class="form-inline" role="form">
+  <div class="form-group has-success has-feedback">
+    <label class="control-label" for="inputSuccess4"><div id="profileInfo">A</div></label>
+    <input type="text" class="form-control" id="inputSuccess4" placeholder="i.e. 7506 Charmant Drive">
+    <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+  </div>
+
+  
+  <div class="checkbox">
+  <label>
+    <input type="checkbox" value="">
+    Remember this address
+  </label>
+  </div>
+  
+<br>
+  
+  
+  <form class="form-inline" role="form">
+  <div class="form-group has-success has-feedback">
+    <label class="control-label" for="inputSuccess4"><div id="profileInfo">B</div></label>
+    <input type="text" class="form-control" id="inputSuccess4" placeholder="i.e. 7956 Playmor Terrace, 92122">
+    <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+  </div>
+
+  
+  <div class="checkbox">
+  <label>
+    <input type="checkbox" value="">
+    Remember this address
+  </label>
+  </div>
+  
+<br>
+  
+  <form class="form-inline" role="form">
+  <div class="form-group has-success has-feedback">
+    <label class="control-label" for="inputSuccess4"><div id="profileInfo">C</div></label>
+    <input type="text" class="form-control" id="inputSuccess4" placeholder="a third location">
+    <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+  </div>
+
+  
+  <div class="checkbox">
+  <label>
+    <input type="checkbox" value="">
+    Remember this address
+  </label>
+  </div>
+  
+  <div class="filler"></div>
+  <div class="filler"></div>
+
+  <div align="center" id="map_canvas"></div>
+  <br>
+  <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Choose from Previous Addresses</button>
+  
+  
+  <div class="modal fade" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Recent Address inputs</h4>
+      </div>
+      <div class="modal-body">
+        <p>7506 Charmant Drive</p>
+        <p>15142 Clemente Street</p>
+        <p>7956 Playmor Terrace, 92122</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+</center>
+
+
+<center>
+   <a href="commuter_create_profile.html"><button type="button" class="btn btn-warning btn-default">Back</button></a>
+
+   <a href="main.html" button type="button" class="btn btn-primary btn-lg">Next</a></button>
+</center>
+  <div class="filler"></div>
+  <div class="filler"></div>
+</body>
+</html>

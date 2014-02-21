@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>UCSD SmartLiner</title>
+<!-- Mobile viewport optimized -->
+  <meta name="viewport" content="width=device-width">
+<!-- CSS -->
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" /> 
+    <link href="../css/bootstrap-responsive.css" rel="stylesheet" type="text/css" />
+    <link type="text/css" rel="stylesheet" href="../css/main.css">
+	<link href="../css/jasny-bootstrap.css" rel="stylesheet">
+	<link href="../css/jasny-bootstrap.min.css" rel="stylesheet">
+<!--Scripts-->
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="../js/bootstrap.js" type="text/javascript"></script>
+  <script src="../js/jquery.validate.min.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+ 
+<header>
+<div class="row-fluid">
+<div class="navbar navbar-inverse">
+  <div class="navbar-inner">
+   <a class="brand" href="../indexnew.html"><img src="../img/logo.png"/></a>
+    <div class="container-fluid">
+  <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+   <span class="icon-bar"></span>
+   <span class="icon-bar"></span>
+   <span class="icon-bar"></span>
+  </a>
+  <div class="nav-collapse collapse">
+<ul class="nav">
+   <li class="active"><a href="../indexnew.html"><i class="icon-home icon-white"></i> Home</a></li>
+   <li><a href="configuration.html">Profile</a></li>
+   <li><a href="../index.html">Sign Out</a></li>
+   
+</ul>
+    </div><!-- /.nav-collapse -->
+    </div><!-- /.container -->
+  </div><!-- /.navbar-inner -->
+</div><!-- /.navbar -->
+</div>
+</header>
+
+<center>
+ <div class="container">
+  <div class="row clearfix">
+    <div class="col-md-12 column">
+    <center>
+        <h1>
+      Create a Profile!
+        </h1>
+        <p class="lead">Step 1: Enter Basic Information!</p>
+    
+    <div class="login">
+    
+    <form id="profileForm" name="profileForm">
+      <label for="exampleInputEmail">Email address</label>
+      <input name="email" type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address">
+<!--      <span class="help-block">Any email works! Whether it be UCSD or Gmail</span>-->
+
+      <label for="exampleInputPassword">Password</label>
+      <input name="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Create a password">
+<!--      <span class="help-block">Create a case-sensitive password!</span>-->
+
+      <label for="exampleInputPhonenum">Telephone Number</label>
+      <input name="phone" type="phone" class="form-control" id="exampleInputEmail1" placeholder="(XXX) XXX-XXXX">
+<!--      <span class="help-block">For User Records!</span>-->
+      </form>
+      <p class="lead">Step 2: Personalization!</p>
+      <div class="fileinput fileinput-new" data-provides="fileinput">
+      <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 200px; height: 150px;"></div>
+      <div>
+      <span class="btn btn-default btn-file"><span class="fileinput-new"></span><span class="fileinput-exists">Change</span><input type="file" name="...">Choose a Photo!</span>
+      <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+      </div>
+      </div>
+
+  <div class="filler"></div>
+  <div class="col-md-12 column">
+      <a href="register.html" button type="button" class="btn btn-warning btn-lg">Back</button></a>
+
+      <a href="configuration.html" button type="button" class="btn btn-primary btn-lg" id="submit" disabled="disabled" onclick="return validateForm();">Submit</button></a>
+  </div>
+  </div>
+</div>
+</center>
+<div class="filler"></div>
+<div class="filler"></div>
+</body>
+<script>
+  (function() {
+    $('form > input').keyup(function() {
+
+        var empty = false;
+        $('form > input').each(function() {
+            if ($(this).val() == '') {
+                empty = true;
+            }
+        });
+
+        if (empty) {
+            $('#submit').attr('disabled', 'disabled');
+        } else {
+            $('#submit').removeAttr('disabled');
+        }
+    });
+  })()
+</script>
+<script>
+  function validateForm()
+  {
+  var x=document.forms["profileForm"]["email"].value;
+  var atpos=x.indexOf("@");
+  var dotpos=x.lastIndexOf(".");
+  if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)
+    {
+    alert("Not a valid e-mail address");
+    return false;
+    }
+  }
+</script>
+  <!--script>
+    $(function(){
+
+    $.validator.setDefaults({
+      errorPlacement: function(error, element) { error.appendTo( element.parent() ); },
+      onkeyup: false
+    });
+
+    $('#profileForm').validate({
+      rules: {
+        "email": {required: true},
+        "password": {required: true, minlength: 6},
+        "phone": {required: true},
+      },
+      onkeyup: false
+    });
+  })
+  </script-->
+</html>
