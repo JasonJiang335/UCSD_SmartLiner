@@ -68,24 +68,24 @@ width:1000px;
 }
 
 .ontime {
-  border: solid #80ff80 2px;
-  font-size: 130%;
+  border: solid #00cc00  4px;
+  font-size: 180%;
   padding: 10px;
-  color: #80ff80;
+  color: #00cc00 ;
   height: 20px;
   width: 150px;
 }
 
 .campuslocation {
-  font-size: 130%;
-  color: #6CBDF0
+  font-size: 200%;
+  color: #6CBDF0;
 }
 
 .ontimecampus {
-  border: solid #80ff80 2px;
-  font-size: 130%;
+  border: solid #00cc00 4px;
+  font-size: 180%;
   padding: 10px;
-  color: #80ff80;
+  color: #00cc00 ;
   height: 20px;
   width: 150px;
 }

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>UCSD SmartLiner</title>
+<!-- Mobile viewport optimized -->
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+<!-- CSS -->
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" /> 
+    <link href="../css/bootstrap-responsive.css" rel="stylesheet" type="text/css" />
+    <link type="text/css" rel="stylesheet" href="../css/main.css">
+<!--Scripts-->
+   <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+   <script src="../js/bootstrap.js" type="text/javascript"></script>
+   <script src="../js/jquery.js" type="text/javascript"></script>
+   <script src="../../socket.io/socket.io.js" type="text/javascript"></script>
+   <script type="text/javascript" src="../js/beacon.js"></script>
+   <script src="../js/carpool.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="container-fluid">
+ 
+<header>
+<div class="row-fluid">
+<div class="navbar navbar-inverse">
+  <div class="navbar-inner">
+   <a class="brand" href="../indexnew.html"><img src="../img/logo.png"/></a>
+    <div class="container-fluid">
+  <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+   <span class="icon-bar"></span>
+   <span class="icon-bar"></span>
+   <span class="icon-bar"></span>
+  </a>
+  <div class="nav-collapse collapse">
+<ul class="nav">
+   <li class="active"><a href="/main"><i class="icon-home icon-white"></i> Home</a></li>
+   <li><a href="profile.html">Profile</a></li>
+   <li><a href="/logout">Sign Out</a></li>
+   
+</ul>
+    </div><!-- /.nav-collapse -->
+    </div><!-- /.container -->
+  </div><!-- /.navbar-inner -->
+</div><!-- /.navbar -->
+</div>
+</header>
+
+<center>
+<div class="container">
+  <div class="row clearfix">
+    <div class="col-md-12 column">
+      <h1>Please Choose your Destination</h1>
+      
+      <img src = "../img/testing2.png" usemap="#meep" width="600" height="600"/></div>
+	  <map name="meep">
+  		<area shape="rect" coords="22,25,81,100" alt="ERC" onclick="chooseERC()" id="erc" href="#timeinfo">
+  		
+  		<area shape="rect" coords="22,115,81,176" alt="Marshall" onclick="chooseMarshall()" id="marshall" href="#timeinfo">
+  		
+  		<area shape="rect" coords="22,190,81,237" alt="Muir" onclick="chooseMuir()" id="muir" href="#timeinfo">
+  		
+  		<area shape="rect" coords="22,250,81,300" alt="Revelle" onclick="chooseRevelle()" id="revelle" href="#timeinfo">
+  		
+  		<area shape="rect" coords="93,134,170,178" alt="Warren" onclick="chooseWarren()" id="warren" href="#timeinfo">
+  		
+  		<area shape="rect" coords="93,188,142,245" alt="UniCenter" onclick="chooseCenter()" id="center" href="#timeinfo">
+  		
+  		<area shape="rect" coords="153,188,203,245" alt="Sixth" onclick="chooseSixth()" id="sixth" href="#timeinfo">
+  		
+  		<area shape="rect" coords="93,255,203,275" alt="MedCenter" onclick="chooseMed()" id="med" href="#timeinfo">
+		</map>
+
+    </div>      
+    
+  </div>
+  
+  <div class="filler"></div>
+
+  <div id="reqConfirmInfo">
+  <p class="lead">Thank you!<br>
+     You chose <h3 id="dest">Muir</h3> <p class="lead">as your destination<br>
+     There are <h3 id="carpoolnum">3</h3><p class="lead"> people ahead of you. </p>Click chat to leave a message to find your carpool!
+  </div>
+
+  <div id="invConfirmInfo">
+  <p class="lead">Thank you!<br>
+     You chose <h3 id="dest">Muir</h3> <p class="lead">as your destination<br>
+     There are <h3 id="carpoolnum">3</h3><p class="lead"> people having same destination and want to carpool with you. </p>Click chat to leave a message for them to quickly find you!
+  </div>
+  <center>
+
+  <a href="profile.html" button type="button" class="btn btn-primary btn-default">Check Carpool Info</a></button><br><br>
+  
+  <a href="#" button type="button" class="btn btn-primary btn-default" onclick="cancelReq()">Cancel Carpool Request</a></button><br><br>
+  </center>
+  </div>
+  </div>
+</center>
+
+<center>
+<button type="button" class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#chat">Start Carpool Chat</button>
+<div id="chat" class="collapse">
+  <div class="filler"></div>
+  <!-- CHAT WINDOW TEST-->
+  <div align="center">
+    <div id="content" style="width: 250px; height: 200px; margin: 0 0 10px 0; bosolid 2px #999; overflow-y: scroll; background-color:#99CCFF; border: solid black 4px;"></div>
+      <div class="controls">
+         <input id="field" style="width:180px;">
+         <input id="send" type="button" value="send">
+         <div class="filler"></div>
+      </div>
+  </div>
+</div>
+<div class="filler"></div>
+<a href="/main"><button type="button" class="btn btn-warning btn-default">Back</button></a><br><br><br><br>
+</center>
+
+<div id="bottombar">
+      <center>
+       <a href="live_map.html"><button type="button" class="btn btn-warning btn-small">View Map</button></a>
+       <!--maybe just link to ucsdbus.com/maps? -->
+       <a href="carpool_destination.html"><button type="button" class="btn btn-warning btn-small">Carpool</button></a>
+        <a href="configuration2.html"><button type="button" class="btn btn-warning btn-small"><i class="icon-wrench icon-white"></i> Settings</button></a>
+      </center>
+  </div>  
+</body>
+</html>

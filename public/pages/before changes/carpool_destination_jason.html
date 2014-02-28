@@ -20,16 +20,34 @@
 <div class="container-fluid">
  
 <header>
-
+<div class="row-fluid">
+<div class="navbar navbar-inverse">
+  <div class="navbar-inner">
+   <a class="brand" href="../indexnew.html"><img src="../img/logo.png"/></a>
+    <div class="container-fluid">
+  <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+   <span class="icon-bar"></span>
+   <span class="icon-bar"></span>
+   <span class="icon-bar"></span>
+  </a>
+  <div class="nav-collapse collapse">
+<ul class="nav">
+   <li class="active"><a href="/main"><i class="icon-home icon-white"></i> Home</a></li>
+   <li><a href="profile.html">Profile</a></li>
+   <li><a href="/logout">Sign Out</a></li>
+   
+</ul>
+    </div><!-- /.nav-collapse -->
+    </div><!-- /.container -->
+  </div><!-- /.navbar-inner -->
+</div><!-- /.navbar -->
+</div>
 </header>
 
 <center>
 <div class="container">
   <div class="row clearfix">
     <div class="col-md-12 column">
-    <div class="filler"></div>
-    <div class="filler"></div>
-
       <h1>Want Carpool or Provide Carpool?</h1>
       <form>
         <input type="radio" checked name="carpoolcheck" id="request" value="request"> Request Carpool</input><br>
@@ -38,30 +56,29 @@
       <h1>Please Choose your Destination</h1>
       
       <img src = "../img/testing2.png" usemap="#meep" width="600" height="600"/></div>
-    <map name="meep">
-      <area shape="rect" coords="22,25,81,100" alt="ERC" onclick="chooseERC()" id="erc" href="#reqConfirmInfo1">
-      
-      <area shape="rect" coords="22,115,81,176" alt="Marshall" onclick="chooseMarshall()" id="marshall" href="#reqConfirmInfo1">
-      
-      <area shape="rect" coords="22,190,81,237" alt="Muir" onclick="chooseMuir()" id="muir" href="#reqConfirmInfo1">
-      
-      <area shape="rect" coords="22,250,81,300" alt="Revelle" onclick="chooseRevelle()" id="revelle" href="#reqConfirmInfo1">
-      
-      <area shape="rect" coords="93,134,170,178" alt="Warren" onclick="chooseWarren()" id="warren" href="#reqConfirmInfo1">
-      
-      <area shape="rect" coords="93,188,142,245" alt="UniCenter" onclick="chooseCenter()" id="center" href="#reqConfirmInfo1">
-      
-      <area shape="rect" coords="153,188,203,245" alt="Sixth" onclick="chooseSixth()" id="sixth" href="#reqConfirmInfo1">
-      
-      <area shape="rect" coords="93,255,203,275" alt="MedCenter" onclick="chooseMed()" id="med" href="#reqConfirmInfo1">
-    </map>
+	  <map name="meep">
+  		<area shape="rect" coords="22,25,81,100" alt="ERC" onclick="chooseERC()" id="erc" href="#reqConfirmInfo1">
+  		
+  		<area shape="rect" coords="22,115,81,176" alt="Marshall" onclick="chooseMarshall()" id="marshall" href="#reqConfirmInfo1">
+  		
+  		<area shape="rect" coords="22,190,81,237" alt="Muir" onclick="chooseMuir()" id="muir" href="#reqConfirmInfo1">
+  		
+  		<area shape="rect" coords="22,250,81,300" alt="Revelle" onclick="chooseRevelle()" id="revelle" href="#reqConfirmInfo1">
+  		
+  		<area shape="rect" coords="93,134,170,178" alt="Warren" onclick="chooseWarren()" id="warren" href="#reqConfirmInfo1">
+  		
+  		<area shape="rect" coords="93,188,142,245" alt="UniCenter" onclick="chooseCenter()" id="center" href="#reqConfirmInfo1">
+  		
+  		<area shape="rect" coords="153,188,203,245" alt="Sixth" onclick="chooseSixth()" id="sixth" href="#reqConfirmInfo1">
+  		
+  		<area shape="rect" coords="93,255,203,275" alt="MedCenter" onclick="chooseMed()" id="med" href="#reqConfirmInfo1">
+		</map>
 
     </div>      
     
   </div>
   
   <div class="filler"></div>
-
   <div id="reqConfirmInfo1">
   <div id="reqConfirmInfo">
   <p class="lead">Thank you!<br>
@@ -76,19 +93,16 @@
   </div>
   <center>
 
-  <!--<p><a href="profile.html" button type="button" class="btn btn-primary btn-small">Check Carpool Info</a></button></p>-->
+  <a href="profile.html" button type="button" class="btn btn-primary btn-default">Check Carpool Info</a></button><br><br>
   
-  <a href="profile.html" button type="button" class="btn btn-primary btn-small">Check Carpool Info</a></button><br><br>
-  
-  <a button type="button" class="btn btn-primary btn-small" onclick="cancelReq()">Cancel Carpool Request/Invitation</a></button><br><br>
-
+  <a button type="button" class="btn btn-primary btn-default" onclick="cancelReq()">Cancel Carpool Request/Invitation</a></button><br><br>
   </center>
   </div>
   </div>
 </center>
 
 <center>
-<button type="button" class="btn btn-primary btn-small" data-toggle="collapse" data-target="#chat">Start Carpool Chat</button>
+<button type="button" class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#chat">Start Carpool Chat</button>
 <div id="chat" class="collapse">
   <div class="filler"></div>
   <!-- CHAT WINDOW TEST-->
@@ -102,34 +116,16 @@
   </div>
 </div>
 <div class="filler"></div>
-<br><br><br><br>
+<a href="/main"><button type="button" class="btn btn-warning btn-default">Back</button></a><br><br><br><br>
 </center>
 
-<!--bottom navigation-->
 <div id="bottombar">
       <center>
-      <!--icon-->
-      <a class="brand" href="/main"><img class="brandicon" src="../img/logo.png" style="width:30px; height:30px;"/></a>
-      <!--back button-->
-      <a href="/main"><button type="button" class="btn btn-warning btn-mini"><i class=" icon-arrow-left icon-white"></i></button></a>
-      <!--live map-->
-       <a href="live_map.html"><button type="button" class="btn btn-warning btn-mini">Live Map</button></a>
-       <!--carpool-->
-       <a href="carpool_destination.html"><button type="button" class="btn btn-warning btn-mini"><u>Carpool</u></button></a>
-       <!--options-->
-       <a class="btn btn-warning btn-mini" data-toggle="collapse" data-target=".nav-collapse"> <i class="icon-cog icon-white"></i> Options</a>
-          <!--drop down options-->
-          <div class="nav-collapse collapse">
-          <ul class="nav">
-            <li class="active"><a href="/main"><i class="icon-home icon-white"></i> Home</a></li>
-            <li><a href="profile.html">Profile Settings</a></li>
-            <li><a href="/logout">Sign Out</a></li>
-          </ul>
-          </div>
-
+       <a href="live_map.html"><button type="button" class="btn btn-warning btn-small">View Map</button></a>
+       <!--maybe just link to ucsdbus.com/maps? -->
+       <a href="carpool_destination.html"><button type="button" class="btn btn-warning btn-small">Carpool</button></a>
+        <a href="configuration2.html"><button type="button" class="btn btn-warning btn-small"><i class="icon-wrench icon-white"></i> Settings</button></a>
       </center>
-</div> <!--end bottom nav-->
-
-
+  </div>  
 </body>
 </html>
