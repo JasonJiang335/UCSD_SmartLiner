@@ -2,7 +2,7 @@ var carpoolcheck = document.getElementsByName("carpoolcheck");
 
 window.onload = function() {
     var messages = [];
-    var socket = io.connect('http://137.110.56.190:3500/');
+    var socket = io.connect('http://ucsdsmartliner.herokuapp.com/');
     var field = document.getElementById("field");
     var sendButton = document.getElementById("send");
     var content = document.getElementById("content");
